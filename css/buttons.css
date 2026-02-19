@@ -1,46 +1,68 @@
-/* สร้างไฟล์ buttons.css ในโฟลเดอร์ css */
-.btn-success {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-        /* การใช้ Element Selector */
-        nav {
-            background-color: #000000;
+.product-card {
+            width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .product-info {
             padding: 15px;
         }
 
-        /* การใช้ Descendant Selector */
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
+        .product-title {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
 
-        /* การใช้ Child Selector */
-        nav > ul > li {
-            margin: 0 10px;
+        .product-price {
+            color: #007bff;
+            font-size: 24px;
+            font-weight: bold;
         }
 
-        /* การใช้ Class Selector */
-        .menu-item {
+        .product-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .product-button {
+            display: block;
+            background: linear-gradient(to right, #007bff, #0056b3);
             color: white;
+            text-align: center;
+            padding: 10px;
             text-decoration: none;
-            padding: 5px 10px;
+            margin-top: 15px;
+            border-radius: 4px;
         }
 
-        /* การใช้ Pseudo-class */
-        .menu-item:hover {
-            background-color: #000000;
-            border-radius: 3px;
+        .product-button:hover {
+            background: linear-gradient(to right, #0056b3, #003980);
         }
-
-        /* การใช้ ID Selector */
-        #active {
-            background-color: #ffb327;
-            border-radius: 5px;
+        .product-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 40px;
         }

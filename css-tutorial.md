@@ -250,57 +250,11 @@ div > p {
     </nav>
 </body>
 </html>
-#CSS
-.btn-success {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-        /* การใช้ Element Selector */
-        nav {
-            background-color: #000000;
-            padding: 15px;
-        }
-
-        /* การใช้ Descendant Selector */
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        /* การใช้ Child Selector */
-        nav > ul > li {
-            margin: 0 10px;
-        }
-
-        /* การใช้ Class Selector */
-        .menu-item {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-
-        /* การใช้ Pseudo-class */
-        .menu-item:hover {
-            background-color: #000000;
-            border-radius: 3px;
-        }
-
-        /* การใช้ ID Selector */
-        #active {
-            background-color: #ffb327;
-            border-radius: 5px;
-        }
 
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
-![ผลการทดลอง] (<images/1.png>)
+![alt text](../images/1.png)
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
 ## การทดลองที่ 3: การจัดการสีและพื้นหลัง
@@ -404,8 +358,67 @@ background-size: cover;
 ### ผลการทดลอง
 ```html
 [วางโค้ดที่นี่]
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+    <div class="product-list">
+        <div class="product-card">
+            <div class="product-image"><img src= "../images/mlbb.jpg" alt="สินค้าตัวอย่าง 1"></div>
+            <div class="product-info">
+                <h2 class="product-title">Mobile Legends</h2>
+                <p class="product-price">฿2,000</p>
+                <p class="product-description">
+                เกมที่มีความสมดุลแต่ภาพไม่สวยเท่าเกมอื่นๆ แต่ก็ยังคงความสนุกและน่าเล่นอยู่เสมอ
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+<div class="product-card">
+            <div class="product-image"><img src="../images/dota.jpg" alt="สินค้าตัวอย่าง 2"></div>
+            <div class="product-info">
+                <h2 class="product-title">Dota2</h2>
+                <p class="product-price">฿1,500</p>
+                <p class="product-description">
+                เกมPCภาพสวยแต่แลกกับสุขภาพจิตและความยากในการเล่นที่สูงมากๆ
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="../images/lol.jpg" alt="สินค้าตัวอย่าง 3"></div>
+            <div class="product-info">
+                <h2 class="product-title">League of Legends</h2>
+                <p class="product-price">฿1,000</p>
+                <p class="product-description">
+                เกมPCหมาๆเล่นไปก็หัวร้อน แต่ก็ยังคงความสนุกและน่าเล่นอยู่เสมอ
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="../images/rov.jpg" alt="สินค้าตัวอย่าง 4"></div>
+            <div class="product-info">
+                <h2 class="product-title">Arena of Valor</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">
+                เกมไม่พัฒนามานานมากๆแต่ก็ยังคงความสนุกและน่าเล่นอยู่เสมอ 
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![alt text](../images/2.png)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
