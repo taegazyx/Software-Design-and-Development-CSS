@@ -1,42 +1,55 @@
-      .stats-container {
-            display: flex;
-            justify-content: space-around;
-            max-width: 2000px;
+  .blog-post {
+            max-width: 1000px;
             margin: 2rem auto;
             padding: 0 1rem;
+            font-family: 'Sarabun', sans-serif;
         }
 
-        .stat-box {
-            flex: 1;
-            margin: 0 15px;
-            padding: 2rem;
+        .post-header {
             text-align: center;
-            background-color: rgb(255, 176, 5);
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
         }
 
-        .stat-number {
+        .post-title {
             font-size: 4rem;
-            font-weight: bold;
-            color: #000000;
+            color: #333;
             margin-bottom: 0.5rem;
+            line-height: 1.2;
         }
 
-        .stat-label {
-            font-size: 1rem;
-            color: #000000;
+        .post-meta {
+            color: #666;
+            font-size: 1.5rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .stats-container {
-                flex-direction: column;
-            }
+        .post-content {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: #444;
+        }
 
-            .stat-box {
-                margin: 1rem 0;
+        .post-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .post-content h2 {
+            font-size: 2.0rem;
+            color: #333;
+            margin: 2rem 0 1rem;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid #ffad15;
+            margin: 1.5rem 0;
+            padding-left: 1rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .post-title {
+                font-size: 2rem;
             }
         }
