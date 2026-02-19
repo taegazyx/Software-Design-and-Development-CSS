@@ -254,7 +254,7 @@ div > p {
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
-![alt text](../images/1.png)
+![Software-Design-and-Development-CSS/images/2.png](images/1.png)
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
 ## การทดลองที่ 3: การจัดการสีและพื้นหลัง
@@ -418,7 +418,7 @@ background-size: cover;
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
-![alt text](../images/2.png)
+![Software-Design-and-Development-CSS/images/2.png](images/2.png)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
@@ -515,11 +515,77 @@ border: 1px solid black;
 ### ผลการทดลอง
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">1,234</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">5.6K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </div>
+</body>
+</html>
 ```
 ```css
 [วางโค้ด CSS ที่นี่]
+      .stats-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 2000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .stat-box {
+            flex: 1;
+            margin: 0 15px;
+            padding: 2rem;
+            text-align: center;
+            background-color: rgb(255, 176, 5);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .stats-container {
+                flex-direction: column;
+            }
+
+            .stat-box {
+                margin: 1rem 0;
+            }
+        }
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![Software-Design-and-Development-CSS/images/2.png](images/3.png)
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์
